@@ -35,6 +35,11 @@ $(document).ready(function () {
 		}, "fast");
 	});
 		
+	$('#contactForm').on('submit', function(e) {
+	  $('#contactForm *').fadeOut(2000);
+	  $('#contactForm').prepend('Your submission has been processed...');
+	});
+	
 	var windowHeight = $('.homeContact').height() - 75;
 	
 	$("#stage").scroll(function (){
