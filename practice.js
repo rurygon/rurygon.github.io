@@ -36,10 +36,8 @@ $(document).ready(function () {
 	});
 		
 	$('#contactForm').on('submit', function(e) {
-	  $('#contactForm *').fadeOut(2000, function() {
-		  $('#contactForm').prepend('Your submission has been processed...');
-	  });
-	  
+	  $('#contactForm *').fadeOut(2000, function());
+	  $('#contactForm').prepend('Your submission has been processed...');
 	});
 	
 	var windowHeight = $('.homeContact').height() - 75;
