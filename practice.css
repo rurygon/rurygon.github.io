@@ -1,0 +1,184 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	padding: 0;
+}
+
+/*Layout for desktops*/
+@media only screen and (min-width: 769px){
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#stage {
+		height: 100%;
+		width: 100%;
+		overflow: scroll;
+		position: fixed;	
+	}
+	
+	.homeContact {
+		/* Set a specific height */
+		height: 100%;
+
+		/* Position and center the image to scale nicely on all screens */
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		background-attachment: fixed;
+		background-position: 50%;
+	}
+	
+	.page {
+		/* Set a specific height */
+		height: 150%;
+
+		/* Position and center the image to scale nicely on all screens */
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		background-attachment: fixed;
+		background-position: 50%;
+	}	
+	
+	#name {
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 600;
+		font-size: 3em;
+		color: white;
+		opacity: 0.7;
+		position: absolute;
+		bottom: 200px;
+		left: 50px;
+	}
+
+	#title {
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 100;
+		font-size: 1.75em;
+		color: dimgray;
+		opacity: 0.7;
+		position: absolute;
+		bottom: 170px;
+		left: 50px;
+	}
+
+	.barLinks {
+		margin: 5px;
+		display: inline-block;
+		color: black;
+		font-size: 2.5em;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 100;
+		vertical-align: middle;
+		text-align: left;
+		line-height: 75px;
+	}
+
+	.barLinks a {
+		text-decoration: none;
+		color: black;
+		margin: auto;
+		padding-right: 30px;
+	}
+
+	#headerFooter {
+		display: inline-block;
+	}
+
+	.header {
+		z-index: 1;
+		height: 75px;
+		width: 100%;
+		background-color: white;
+		position: fixed;
+		top: 0;
+		border-bottom: 0.5px solid dimgray;
+	}
+
+	.footer {
+		z-index: 1;
+		height: 75px;
+		width: 100%;
+		background-color: white;
+		position: absolute;
+		bottom: 0;
+		border-bottom: 0.5px solid dimgray;
+	}
+
+	.pageContents{
+		height: 250px;
+		width: 100%;
+		background-color: white;
+		position: relative;
+		text-align: left;
+	}
+	
+	.pageHeadings {
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 600;
+		font-size: 3em;
+		color: black;
+		position: absolute;
+		top: 75px;
+		left: 50px;
+	}
+	
+	.pageDescription {
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 100;
+		font-size: 1.5em;
+		color: black;
+		position: absolute;
+		padding: 50px;
+		top: 25px;
+		left: 400px;
+	}
+	
+	.pageDescription p a {
+		color: black;
+		font-weight: 200;
+	}
+	
+	#contactForm {
+		position: absolute;
+		vertical-align: middle;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 100;
+		left: 300px;
+		top: 150px;
+		font-size: 2em;
+	}
+	
+	/* Style inputs with type="text", select elements and textareas */
+	input[type=text], textarea {
+		font-size: .5em; 
+		width: 40em; /* Full width */
+		padding: 12px; /* Some padding */  
+		border: 1px solid #ccc; /* Gray border */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally)*/
+	}
+
+	input[type=submit], input[type=reset] {
+		background-color: white;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 100;
+		border: 1px solid #ccc; /* Gray border */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		font-size: .6em;
+		padding: 10px 20px 10px 20px;
+	}
+	
+}
