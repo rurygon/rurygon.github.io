@@ -16,7 +16,7 @@
 title: Rury Gonzalez
 email: rury.gon@gmail.com
 description: A website detailing the work of Rury Gonzalez
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "rurygon.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: leo2sexy
 github_username:  rurygon
