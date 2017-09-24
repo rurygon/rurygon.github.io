@@ -36,8 +36,8 @@ $(document).ready(function () {
 	});
 	
 	$('#contactForm').on('submit', function(e) {
-	  $('#contactForm *').fadeOut(2000);
-	  $('#contactForm').prepend('Your submission has been processed...');
+		$('#contactForm *').fadeOut(2000);
+		$('#contactForm').prepend('Your submission has been processed...');
 	});
 	
 	var windowHeight = $('.homeContact').height() - 75;
@@ -75,4 +75,13 @@ $(document).ready(function () {
 		$("#desktopStage").animate({ scrollTop: windowHeight+(pageHeight*2)+75 }, "slow");
 		return false;
 	});
+	
+	$("#mainPage").hide();
+	
+	$("#enterButton").click(function() {
+	   $('#enterSplash').fadeOut(1000, function() {
+		   $('#mainPage').fadeIn(1000);
+	   });
+	});
+	
 });
