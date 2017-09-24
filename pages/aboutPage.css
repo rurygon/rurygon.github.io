@@ -33,7 +33,7 @@ body, html {
 	}
 	
 	#homeButton {
-		background-color: black;
+		background-color: white;
 		font-family: 'Work Sans', sans-serif;
 		position: absolute;
 		font-style: italic;
@@ -44,7 +44,6 @@ body, html {
 		display: block;
 		text-decoration: none;
 		font-size: 1.5em;
-		border: 1px solid white;
 	}
 	
 	#homeButton a{
