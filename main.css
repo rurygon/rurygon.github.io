@@ -154,13 +154,15 @@ body, html {
 	}
 	
 	#contactForm {
-		position: absolute;
+		position: relative;
 		vertical-align: middle;
 		font-family: 'Work Sans', sans-serif;
 		font-weight: 100;
-		left: 300px;
-		top: 150px;
 		font-size: 2em;
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+		top: 5em;
 	}
 	
 	/* Style inputs with type="text", select elements and textareas */
@@ -216,9 +218,10 @@ body, html {
 	#pageGreeting {
 		color: white;
 		font-family: 'Work Sans', sans-serif;
-		font-size: 3.5em;
+		font-size: 2.5em;
 		font-weight: 100;
 		position: absolute;
+		font-style: italic;
 	}
 	
 	#pageGreeting span {

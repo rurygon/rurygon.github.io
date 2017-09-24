@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	padding: 0;
+}
+
+/*Layout for mobile*/
+@media only screen and (max-width: 1080px){
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.mobStage {
+		background-color: black;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	#pageGreeting {
+		color: white;
+		font-family: 'Work Sans', sans-serif;
+		font-size: 2.5em;
+		font-weight: 100;
+		position: absolute;
+		font-style: italic;
+	}
+	
+	#pageGreeting span {
+		font-weight: 600;
+	}
+}
