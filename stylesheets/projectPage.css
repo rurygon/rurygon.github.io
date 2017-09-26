@@ -69,6 +69,8 @@ body, html {
 		text-align: center;
 		vertical-align: middle;
 		line-height: 10em;
+		display: flex;
+		align-items: center;
 	}
 
 	#buttonContainer {
@@ -76,8 +78,7 @@ body, html {
 		line-height: inherit;
 		margin: 0 auto;
 		width: 50%;
-		height: 100%;
-		bottom: 0%;
+		position: relative;
 	}
 	
 	#mobHome {
