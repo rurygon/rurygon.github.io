@@ -4,7 +4,7 @@
         <link type="text/css" rel="stylesheet" href="/stylesheets/projectPage.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,500,600" rel="stylesheet">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type ="text/javascript" src="main.js"></script>
+        <script type ="text/javascript" src="/javascript/projectPage.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,33 @@
     <body>
 		<div class="mobStage">
 			<p id="pageGreeting">This is the <br><span>Projects</span> page. </p>
+			<div class="mobMenu">
+				<div id="buttonContainer">
+					<div id="mobHome">
+						<p>Home</p>
+					</div>
+
+					<div id="mobAbout">
+						<p>About</p>
+					</div>
+
+					<div id="mobContact">
+						<p>Contact</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		
-		<div id="homeButton">
-			<a href="/index.html">Go<br>Home.</a>
+		<div class="homeButton" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
 		</div>
+		
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("change");
+			}
+		</script>
 	</body>
 </html>
