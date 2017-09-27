@@ -1,6 +1,8 @@
 $(document).ready(function () {
+	$('body').hide();
 	
 	$('.mobMenu').hide();
+	$('body').fadeIn(1000);
 	
 	$('.homeButton').click(function(){
 		$('.mobMenu').fadeToggle();

@@ -83,4 +83,17 @@ $(document).ready(function () {
 		   $('#mainPage').fadeIn(1000);
 	   });
 	});
+	
+	$("a[href='/pages/aboutPage.html']").click(function() {
+		$('body').fadeOut(1000);
+	});
+	$("a[href='/pages/projectPage.html']").click(function() {
+		$('body').fadeOut(1000);
+	});
+	$("a[href='/pages/contactPage.html']").click(function() {
+		$('body').fadeOut(1000);
+	});
+	$("a[href='/pages/index.html']").click(function() {
+		$('body').fadeOut(1000);
+	});
 });
