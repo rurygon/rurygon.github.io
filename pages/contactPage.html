@@ -8,38 +8,21 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rury Gonzalez</title>
+        <title>Rury Gonzalez | Contact</title>
     </head>
 
     <body>
 		
 		<div id="desktopStage">
-			<div id="menuBar">
-				<div id="menuName">
-					Rury Gonzalez
-				</div>
-				<div id="listContainer">
-					<ul class="menuList">
-						<li class="menuLink"><a href="/index.html">Home</a></li>
-						<li class="menuLink"><a href="/pages/aboutPage.html">About</a></li>
-						<li class="menuLink" id="projectLink"><a href="/pages/projectsPage.html">Projects</a>
-							<ul class="submenuList">
-								<li class="submenuLink"><a href="/pages/webDevPage.html">Web Development</a></li>
-								<li class="submenuLink"><a href="/pages/musicPage.html">Music</a></li>
-								<li class="submenuLink"><a href="/pages/filmPage.html">Film Photography</a></li>
-								<li class="submenuLink"><a href="/blogPosts/blogMain.html">Blog</a></li>
-							</ul>
-						</li>
-						<li class="menuLink"><a href="/pages/contactPage.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
 			
-			<div id="contentArea">
-				<div id="">
-					
-				</div>
-			</div>
+			<form name ="gform" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdlrUA6xwrpr2T-q2uWcEZqPnfiHqAfsX8v36qmDEqVnlRIvA/formResponse?" target ="hidden_iframe" onsubmit="submitted=true;">
+				<p>Name</p> <input type="text" name="entry.1057587952" id="entry.1057587952">
+				<p>Email</p> <input type="text" name="entry.389670089" id="entry.389670089">
+				<p>Message</p><textarea name="entry.1464838846" id="entry.1464838846" rows="6" cols="25"></textarea><br/>
+				<input type="submit" value="submit"><input type="reset" value="reset">
+			</form>
+
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		</div>
 		
 	</body>

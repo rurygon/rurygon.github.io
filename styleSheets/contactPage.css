@@ -5,82 +5,50 @@ body, html {
 	padding: 0;
 }
 
-/*Layout for desktops*/
-@media only screen and (min-width: 1081px){
-	#mobileStage {
-		display: none;
-	}
-	
-	h1, p {
-		margin: 0;
-		padding: 0;
-	}
-	
-	#desktopStage {
-		height: 100%;
-		width: 100%;
-		background-color: white;
-		position: absolute;
-	}
-	
-	#menuBar {
-		z-index: 1;
-		height: 100%;
-		width: 20%;
-		float: left;
-		border-right: 1px solid #ccc;
-		background-color: white;
-		position: fixed;
-	}
-	
-	#menuName {
-		width: 100%;
-		font-size: 2.5em;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		margin: 1em auto;
-		text-align: center;
-	}
-	
-	#listContainer {
-		width: 45%;
-		margin: 0 auto;
-	}
-	
-	#listContainer ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	/* Main menu formatting */
-	#listContainer ul li a{
-		text-decoration: none;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		color: black;
-		font-size: 2em;
-	}
-	
-	/* Submenu formatting */
-	#listContainer ul li ul li a {
-		text-decoration: none;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		color: black;
-		font-size: 1em;
-	}
-	
-	.submenuLink {
-		margin: .4em 1em;
-	}
-	
-	#contentArea {
-		height: 100%;
-		width: 80%;
-		float: right;
-		background-color: white;
-		position: relative;
-	}
-	
+#mobileStage {
+	display: none;
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+#desktopStage {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+}
+
+#contactForm {
+	position: relative;
+	vertical-align: middle;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	margin: 0 auto;
+	display: block;
+	width: 70%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+	font-size: .5em; 
+	width: 100%; /* Full width */
+	padding: 0.9em; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+}
+
+input[type=submit], input[type=reset] {
+	background-color: white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 100;
+	border: 1px solid #ccc; /* Gray border */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	font-size: .6em;
+	padding: 10px 20px 10px 20px;
 }

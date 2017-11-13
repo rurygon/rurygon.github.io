@@ -5,82 +5,18 @@ body, html {
 	padding: 0;
 }
 
-/*Layout for desktops*/
-@media only screen and (min-width: 1081px){
-	#mobileStage {
-		display: none;
-	}
-	
-	h1, p {
-		margin: 0;
-		padding: 0;
-	}
-	
-	#desktopStage {
-		height: 100%;
-		width: 100%;
-		background-color: white;
-		position: absolute;
-	}
-	
-	#menuBar {
-		z-index: 1;
-		height: 100%;
-		width: 20%;
-		float: left;
-		border-right: 1px solid #ccc;
-		background-color: white;
-		position: fixed;
-	}
-	
-	#menuName {
-		width: 100%;
-		font-size: 2.5em;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		margin: 1em auto;
-		text-align: center;
-	}
-	
-	#listContainer {
-		width: 45%;
-		margin: 0 auto;
-	}
-	
-	#listContainer ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	/* Main menu formatting */
-	#listContainer ul li a{
-		text-decoration: none;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		color: black;
-		font-size: 2em;
-	}
-	
-	/* Submenu formatting */
-	#listContainer ul li ul li a {
-		text-decoration: none;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		color: black;
-		font-size: 1em;
-	}
-	
-	.submenuLink {
-		margin: .4em 1em;
-	}
-	
-	#contentArea {
-		height: 100%;
-		width: 80%;
-		float: right;
-		background-color: white;
-		position: relative;
-	}
-	
+#mobileStage {
+	display: none;
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+#desktopStage {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
 }

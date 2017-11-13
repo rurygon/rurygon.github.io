@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="/styleSheets/main.css">
+        <link type="text/css" rel="stylesheet" href="/styleSheets/index.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,500,600" rel="stylesheet">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type ="text/javascript" src="/javaScript/main.js"></script>
+        <script type ="text/javascript" src="/javaScript/index.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,28 +20,35 @@
 				</div>
 				<div id="listContainer">
 					<ul class="menuList">
-						<li class="menuLink"><a href="/index.html">Home</a></li>
-						<li class="menuLink"><a href="/pages/aboutPage.html">About</a></li>
-						<li class="menuLink" id="projectLink"><a href="pages/projectsPage.html">Projects</a>
+						<li class="menuLink"><a href="/pages/main.html" target="iframeMain">Home</a></li>
+						<li class="menuLink"><a href="/pages/aboutPage.html" target="iframeMain">About</a></li>
+						<li class="menuLink" id="projectLink"><a href="pages/projectsPage.html" target="iframeMain">Projects</a>
 							<ul class="submenuList">
-								<li class="submenuLink"><a href="/pages/webDevPage.html">Web Development</a></li>
-								<li class="submenuLink"><a href="/pages/musicPage.html">Music</a></li>
-								<li class="submenuLink"><a href="/pages/filmPage.html">Film Photography</a></li>
-								<li class="submenuLink"><a href="/blogPosts/blogMain.html">Blog</a></li>
+								<li class="submenuLink"><a href="/pages/webDevPage.html" target="iframeMain">Web Development</a></li>
+								<li class="submenuLink"><a href="/pages/musicPage.html" target="iframeMain">Music</a></li>
+								<li class="submenuLink"><a href="/pages/filmPage.html" target="iframeMain">Film Photography</a></li>
+								<li class="submenuLink"><a href="/blogPosts/blogMain.html" target="iframeMain">Blog</a></li>
 							</ul>
 						</li>
-						<li class="menuLink"><a href="/pages/contactPage.html">Contact</a></li>
+						<li class="menuLink"><a href="/pages/contactPage.html" target="iframeMain">Contact</a></li>
 					</ul>
 				</div>
-			</div>
-			
-			<div id="contentArea">
-				<div id="blackBar">
-					<div id="name">
-						Rury Gonzalez<br><span>Creator of things</span>
+				
+				<div id="socialContainer">
+					<div id="iconContainer">
+						<img class="icons" id="twitter" src="/icons/twitter.png" />
+						<img class="icons" id="insta" src="/icons/insta.png" />
+					</div>
+					<div id="usernameContainer">
+						<p id="twitterUN">@leo2sexy</p>
+						<p id="instaUN">@leo2sexy</p>
 					</div>
 				</div>
 			</div>
+			
+			<iframe src="/pages/main.html" name="iframeMain" class="window">
+			
+			</iframe>
 		</div>
 		
 	</body>

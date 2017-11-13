@@ -1,6 +1,8 @@
 $(document).ready(function () {
 	
 	$(".submenuList").hide();
+	$("#instaUN").hide();
+	$("#twitterUN").hide();
 		
 	$(".menuLink > a, li.submenuLink").mouseenter(function() {
 		$(this).fadeTo('fast', .5);
@@ -13,6 +15,18 @@ $(document).ready(function () {
 		$(this).children("ul.submenuList").slideDown("slow").show();
 	}, function () {
 		$(this).children("ul.submenuList").slideUp("slow");
+	});
+	
+	$("#insta").hover(function (){
+		$("#instaUN").slideDown("slow").show();
+	}, function () {
+		$("#instaUN").slideUp("slow");
+	});
+	
+	$("#twitter").hover(function (){
+		$("#twitterUN").slideDown("slow").show();
+	}, function () {
+		$("#twitterUN").slideUp("slow");
 	});
 	
 	/*

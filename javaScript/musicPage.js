@@ -1,20 +1,5 @@
 $(document).ready(function () {
 	
-	$(".submenuList").hide();
-		
-	$(".menuLink > a, li.submenuLink").mouseenter(function() {
-		$(this).fadeTo('fast', .5);
-	});
-	$(".menuLink > a, li.submenuLink").mouseleave(function() {
-		$(this).fadeTo('fast', 1);
-	});
-	
-	$("#projectLink").hover(function (){
-		$(this).children("ul.submenuList").slideDown("slow").show();
-	}, function () {
-		$(this).children("ul.submenuList").slideUp("slow");
-	});
-	
 	/*
 	$("#mainPage").hide();
 	
