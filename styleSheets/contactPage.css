@@ -23,11 +23,10 @@ h1, p {
 
 #contactForm {
 	position: relative;
-	vertical-align: middle;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 100;
 	font-size: 2em;
-	margin: 0 auto;
+	margin: 2em auto;
 	display: block;
 	width: 70%;
 }

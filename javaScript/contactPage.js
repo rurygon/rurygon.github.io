@@ -27,9 +27,11 @@ $(document).ready(function () {
 		}, "fast");
 	});
 	
+	$("#submitConfirm").hide();
+	
 	$('#contactForm').on('submit', function(e) {
-		$('#contactForm *').fadeOut(2000);
-		$('#contactForm').prepend('Your submission has been processed...');
+		$('#contactForm *').fadeOut(2000).delay(2000);
+		$("#submitConfirm").fadeIn(2000);
 	});
 	
 });
