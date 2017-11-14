@@ -12,7 +12,7 @@ $(document).ready(function () {
 	});
 	
 	$("#projectLink").hover(function (){
-		$(this).children("ul.submenuList").slideDown("slow").show();
+		$(this).children("ul.submenuList").slideDown("slow").show().delay(1000);
 	}, function () {
 		$(this).children("ul.submenuList").slideUp("slow");
 	});
