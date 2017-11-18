@@ -3,6 +3,7 @@ $(document).ready(function () {
 	$(".submenuList").hide();
 	$("#instaUN").hide();
 	$("#twitterUN").hide();
+	$("#menuContainer").hide();
 		
 	$(".menuLink > a, li.submenuLink").mouseenter(function() {
 		$(this).fadeTo('fast', .5);
@@ -27,6 +28,10 @@ $(document).ready(function () {
 		$("#twitterUN").slideDown("slow").show();
 	}, function () {
 		$("#twitterUN").slideUp("slow");
+	});
+	
+	$("#menuButton").click(function () {
+		$("#menuContainer").toggle("fold");
 	});
 	
 	/*
