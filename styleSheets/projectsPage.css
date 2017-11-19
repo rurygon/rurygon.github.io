@@ -3,6 +3,11 @@ html, body {
     width: 100%;
 }
 
+#desktopStage {
+	width: 100%;
+	height: auto;
+}
+
 html, body, p {
 	margin: 0;
 	padding: 0;
@@ -13,17 +18,18 @@ a {
 }
 
 @media only screen and (min-width: 769px){
-	#mobileStage {
-		display: none;
-	}
-
 	#desktopStage {
-		height: 100%;
-		width: 100%;
 		background-color: white;
 		position: absolute;
 	}
-
+	
+	#contentContainer {
+		width: 80%;
+		min-width: 20%;
+		position: relative;
+		margin: 0 auto;
+	}
+	
 	.contentBlock {
 		height: 3em;
 		width: 50%;
@@ -62,8 +68,6 @@ a {
 
 @media only screen and (max-width: 768px){
 	#desktopStage {
-		height: 100%;
-		width: 100%;
 		background-color: black;
 		position: absolute;
 	}
@@ -77,7 +81,7 @@ a {
 	}
 
 	.contentBlock {
-		height: 10vw;
+		height: 15vw;
 		width: 100%;
 		background-color: black;
 		color: white;

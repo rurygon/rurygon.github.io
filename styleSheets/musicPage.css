@@ -1,56 +1,75 @@
-body, html {
+html, body, #desktopStage, #contentContainer {
     height: 100%;
     width: 100%;
-    margin: 0;
-	padding: 0;
 }
 
-#mobileStage {
-	display: none;
-}
-
-h1, p iframe{
+html, body, p, iframe{
 	margin: 0;
 	padding: 0;
 }
 
-#desktopStage {
-	height: 100%;
-	width: 100%;
-	background-color: white;
+#desktopStage{
 	position: absolute;
 }
 
 #contentContainer {
-	height: 100%;
-	width: 100%;
 	overflow: scroll;
 }
 
-#pageHead {
-	width: 100%;
-	height: 15vw;
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-size: 5vw;
-	line-height: 15vw;
-	vertical-align: middle;
-	font-family: "Work Sans", sans-serif;
-	font-weight: 100;
-	border-bottom: 1px solid #ccc;
-}
-
 #musicContainer {
-	width: 80%;
 	height: auto;
 	margin: 0 auto;
 }
 
-.soundcloud {
-	width: 50%;
-	height: 10vw;
-	margin: 2vw auto;
-	display: block;
-	border: 1px solid black;
+@media only screen and (min-width: 769px){
+	#desktopStage {
+		background-color: white;
+	}
+
+	#pageHead {
+		width: 100%;
+		height: 15vw;
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 5vw;
+		line-height: 15vw;
+		vertical-align: middle;
+		font-family: "Work Sans", sans-serif;
+		font-weight: 100;
+		border-bottom: 1px solid #ccc;
+	}
+
+	#musicContainer {
+		width: 80%;
+	}
+	
+	.soundcloud {
+		width: 50%;
+		height: 10vw;
+		margin: 2vw auto;
+		display: block;
+		border: 1px solid black;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#desktopStage {
+		background-color: black;
+	}
+	
+	#musicContainer {
+		width: 100%;
+		margin: 5vw auto;
+	}
+	
+	#pageHead {
+		display: none;
+	}
+	
+	.soundcloud {
+		margin: 2vw 2vw;
+		display: inline-block;
+		border: 1px solid black;
+	}
 }

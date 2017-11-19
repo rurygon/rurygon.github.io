@@ -31,7 +31,11 @@ $(document).ready(function () {
 	});
 	
 	$("#menuButton").click(function () {
-		$("#menuContainer").toggle("fold");
+		$("#menuContainer").toggle("fold", "slow");
+	});
+	
+	$("#menuContainer > a").click(function () {
+		$("#menuContainer").effect("fold", "slow");
 	});
 	
 	/*

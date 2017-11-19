@@ -19,6 +19,7 @@ html, body, p {
 
 #contactForm {
 	position: relative;
+	top: 10%;
 	font-size: 3.5vw;
 	margin: 5vw auto;
 	display: block;
