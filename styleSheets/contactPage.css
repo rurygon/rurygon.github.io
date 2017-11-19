@@ -1,54 +1,58 @@
-body, html {
+html, body, #desktopStage {
     height: 100%;
     width: 100%;
-    margin: 0;
-	padding: 0;
 }
 
-#mobileStage {
-	display: none;
-}
-
-h1, p {
+html, body, p {
 	margin: 0;
 	padding: 0;
 }
 
 #desktopStage {
-	height: 100%;
-	width: 100%;
-	background-color: white;
 	position: absolute;
+}
+
+#contactForm, input[type=text], textarea, input[type=submit], input[type=reset] {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 100;
 }
 
 #contactForm {
 	position: relative;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 100;
-	font-size: 2em;
-	margin: 2em auto;
+	font-size: 3.5vw;
+	margin: 5vw auto;
 	display: block;
 	width: 70%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
-	font-size: .5em; 
+	font-size: 1.75vw; 
 	width: 100%; /* Full width */
-	padding: 0.9em; /* Some padding */  
+	padding: 1.5vw; /* Some padding */  
 	border: 1px solid #ccc; /* Gray border */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 0.5em; /* Add a top margin */
-	margin-bottom: 1em; /* Bottom margin */
+	margin-top: 1vw; /* Add a top margin */
+	margin-bottom: 2vw; /* Bottom margin */
 	resize: none;
 }
 
 input[type=submit], input[type=reset] {
-	background-color: white;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 100;
 	border: 1px solid #ccc; /* Gray border */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	font-size: .6em;
-	padding: 0.5em 1em;
+	font-size: 2vw;
+	padding: 1vw 2vw;
+}
+
+@media only screen and (min-width: 769px){
+	#desktopStage, input[type=submit], input[type=reset] {
+		background-color: white;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#desktopStage, #contactForm, input[type=submit], input[type=reset] {
+		background-color: black;
+		color: white;
+	}
 }
