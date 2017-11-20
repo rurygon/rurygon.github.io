@@ -1,22 +1,46 @@
-body, html {
+html, body, #desktopStage {
     height: 100%;
     width: 100%;
-    margin: 0;
-	padding: 0;
 }
 
-#mobileStage {
-	display: none;
-}
-
-h1, p {
+html, body, p {
 	margin: 0;
 	padding: 0;
 }
 
 #desktopStage {
-	height: 100%;
-	width: 100%;
-	background-color: white;
 	position: absolute;
+}
+
+#bar {
+	width: 100%;
+	height: 15vw;
+	position: relative;
+	top: 40%;
+	text-align: center;
+	line-height: 15vw;
+	vertical-align: middle;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 100;
+	font-size: 5vw;
+}
+
+@media only screen and (min-width: 769px){
+	#desktopStage {
+		background-color: white;
+	}
+	
+	#bar {
+		background-color: black;
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#desktopStage {
+		background-color: black;
+	}
+	#bar {
+		background-color: white;
+	}
 }

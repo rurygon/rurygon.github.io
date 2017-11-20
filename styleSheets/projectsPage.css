@@ -17,6 +17,39 @@ a {
 	text-decoration: none;
 }
 
+.contentBlock {
+	height: 15vw;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 100;
+	font-size: 4.5vw;
+	text-align: center;
+	line-height: 15vw;
+	vertical-align: middle;
+	margin: 7vw auto;
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+#webDevBlock {
+	background-image: url(/backgrounds/webDevBlockBG.jpg);
+}
+
+#musicBlock {
+	background-image: url(/backgrounds/musicBlockBG.jpg);
+}
+
+#filmBlock {
+	background-image: url(/backgrounds/filmBlockBG.jpg);
+}
+
+#blogBlock {
+	background-image: url(/backgrounds/blogBlockBG.jpg);
+}
+
 @media only screen and (min-width: 769px){
 	#desktopStage {
 		background-color: white;
@@ -24,45 +57,10 @@ a {
 	}
 	
 	#contentContainer {
-		width: 80%;
+		width: 50%;
 		min-width: 20%;
 		position: relative;
 		margin: 0 auto;
-	}
-	
-	.contentBlock {
-		height: 3em;
-		width: 50%;
-		min-width: 20%;
-		background-color: black;
-		color: white;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		font-size: 2em;
-		text-align: center;
-		line-height: 3em;
-		vertical-align: middle;
-		margin: 1.5em auto;
-		border: 1px solid #ccc;
-		background-position: center;
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-	}
-
-	#webDevBlock {
-		background-image: url(/backgrounds/webDevBlockBG.jpg);
-	}
-
-	#musicBlock {
-		background-image: url(/backgrounds/musicBlockBG.jpg);
-	}
-
-	#filmBlock {
-		background-image: url(/backgrounds/filmBlockBG.jpg);
-	}
-
-	#blogBlock {
-		background-image: url(/backgrounds/blogBlockBG.jpg);
 	}
 }
 
@@ -78,38 +76,5 @@ a {
 		position: relative;
 		top: 10%;
 		margin: 0 auto;
-	}
-
-	.contentBlock {
-		height: 15vw;
-		width: 100%;
-		background-color: black;
-		color: white;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		font-size: 4.5vw;
-		text-align: center;
-		line-height: 10vw;
-		vertical-align: middle;
-		margin: 7vw auto;
-		background-position: center;
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-	}
-
-	#webDevBlock {
-		background-image: url(/backgrounds/webDevBlockBG.jpg);
-	}
-
-	#musicBlock {
-		background-image: url(/backgrounds/musicBlockBG.jpg);
-	}
-
-	#filmBlock {
-		background-image: url(/backgrounds/filmBlockBG.jpg);
-	}
-
-	#blogBlock {
-		background-image: url(/backgrounds/blogBlockBG.jpg);
 	}
 }

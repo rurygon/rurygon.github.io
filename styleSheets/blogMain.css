@@ -1,28 +1,20 @@
-body, html {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+html, body, p, h3 {
 	padding: 0;
 }
 
-p {
+p, h3 {
 	margin: 1vw;
-	padding: 0;
-}
-
-h3 {
-	margin: 1vw;
-	padding: 0;
-}
-
-#mobileStage {
-	display: none;
 }
 
 #desktopStage {
 	height: 100%;
 	width: 100%;
-	background-color: white;
 	position: absolute;
 	overflow: scroll;
 }
@@ -33,22 +25,13 @@ h3 {
 	text-align: center;
 }
 
-#pageHead {
-	width: 100%;
-	height: 15vw;
-	font-size: 5vw;
-	background-color: black;
-	color: white;
-	line-height: 15vw;
-	vertical-align: middle;
-	border-bottom: 1px solid #ccc;
-}
-
 #contentContainer {
 	height: auto;
 	width: 70%;
-	margin: 2vw auto 0 auto;
+	margin: 10vw auto;
 	position: relative;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 .postPreview {
@@ -56,7 +39,7 @@ h3 {
 	height: auto;
 	font-size: 2vw;
 	margin-bottom: 2vw;
-	border: 1px solid black;
+	border: 1px solid #ccc;
 	position: relative;
 }
 
@@ -80,6 +63,10 @@ h3 {
 	border-top: 1px solid #ccc;
 }
 
+.postText p{
+	border-top: 1px solid #ccc;
+}
+
 .postDateTime {
 	text-align: right;
 	font-size: 1.5vw;
@@ -88,4 +75,37 @@ h3 {
 
 .postDateTime p {
 	margin: 0.5vw;
+}
+
+@media only screen and (min-width: 769px){
+	
+	#desktopStage {
+		background-color: white;
+	}
+
+	#pageHead {
+		width: 100%;
+		height: 15vw;
+		font-size: 5vw;
+		background-color: black;
+		color: white;
+		line-height: 15vw;
+		vertical-align: middle;
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#pageHead {
+		display: none;
+	}
+	#desktopStage {
+		background-color: black;
+	}
+	
+	#contentContainer {
+		color: white;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
 }
