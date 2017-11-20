@@ -19,6 +19,7 @@ html, body, p, iframe{
 #musicContainer {
 	height: auto;
 	margin: 0 auto;
+	display: block;
 }
 
 @media only screen and (min-width: 769px){
@@ -59,8 +60,8 @@ html, body, p, iframe{
 	}
 	
 	#musicContainer {
-		width: 100%;
-		margin: 5vw auto;
+		width: 80%;
+		margin: 15vw auto;
 	}
 	
 	#pageHead {
