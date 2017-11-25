@@ -4,11 +4,11 @@ html, body {
     margin: 0;
 }
 
-html, body, p, h3 {
+html, body, p, h2 {
 	padding: 0;
 }
 
-p, h3 {
+p, h2 {
 	margin: 1vw;
 }
 
@@ -27,7 +27,7 @@ p, h3 {
 
 #contentContainer {
 	height: auto;
-	width: 70%;
+	width: 85%;
 	margin: 15vw auto;
 	position: relative;
 	border-left: 1px solid #ccc;
@@ -37,7 +37,7 @@ p, h3 {
 .postPreview {
 	width: 100%;
 	height: auto;
-	font-size: 2vw;
+	font-size: 3vw;
 	margin-bottom: 2vw;
 	border: 1px solid #ccc;
 	position: relative;
@@ -69,7 +69,7 @@ p, h3 {
 
 .postDateTime {
 	text-align: right;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	border-top: 1px solid #ccc;
 }
 
