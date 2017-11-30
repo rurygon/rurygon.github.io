@@ -69,8 +69,10 @@ html, body, p, iframe{
 	}
 	
 	.soundcloud {
-		margin: 2vw 2vw;
-		display: inline-block;
+		width: 100%;
+		height: auto;
+		margin: 2vw auto;
 		border: 1px solid black;
+		display: block;
 	}
 }
