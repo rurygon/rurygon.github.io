@@ -117,8 +117,16 @@ html, body, p {
 		float: left;
 	}
 	
+	#twitter {
+		content: url(/icons/twitter.png);
+	}
+	
 	#insta, #instaUN {
 		float: right;
+	}
+	
+	#insta {
+		content: url(/icons/insta.png);
 	}
 	
 	.window {

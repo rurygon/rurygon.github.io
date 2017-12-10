@@ -19,36 +19,44 @@ html, body, p {
 
 #contactForm {
 	position: relative;
-	top: 20%;
-	font-size: 5vw;
-	margin: 5vw auto;
 	display: block;
 	width: 80%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
-	font-size: 4vw; 
-	font-weight: 500;
 	width: 100%; /* Full width */
-	padding: 1.5vw; /* Some padding */  
 	border: 1px solid #ccc; /* Gray border */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 2vw; /* Add a top margin */
-	margin-bottom: 4vw; /* Bottom margin */
 	resize: none;
 }
 
 input[type=submit], input[type=reset] {
 	border: 1px solid #ccc; /* Gray border */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	font-size: 3vw;
-	padding: 1vw 2vw;
 }
 
 @media only screen and (min-width: 769px){
 	#desktopStage, input[type=submit], input[type=reset] {
 		background-color: white;
+	}
+	
+	#contactForm {
+		font-size: 3vw;
+		margin: 3vw auto;
+	}
+	
+	input[type=submit], input[type=reset] {
+		font-size: 2vw;
+		padding: 1vw 2vw;
+	}
+	
+	input[type=text], textarea {
+		font-size: 2vw; 
+		font-weight: 500;
+		padding: 1vw; /* Some padding */  
+		margin-top: 1vw; /* Add a top margin */
+		margin-bottom: 2vw; /* Bottom margin */
 	}
 }
 
@@ -56,5 +64,24 @@ input[type=submit], input[type=reset] {
 	#desktopStage, #contactForm, input[type=submit], input[type=reset] {
 		background-color: black;
 		color: white;
+	}
+	
+	#contactForm {
+		font-size: 5vw;
+		margin: 5vw auto;
+	}
+	
+	input[type=submit], input[type=reset] {
+		font-size: 3vw;
+		padding: 1vw 2vw;
+	}
+	
+	/* Style inputs with type="text", select elements and textareas */
+	input[type=text], textarea {
+		font-size: 4vw; 
+		font-weight: 500;
+		padding: 1.5vw; /* Some padding */  
+		margin-top: 2vw; /* Add a top margin */
+		margin-bottom: 4vw; /* Bottom margin */
 	}
 }
