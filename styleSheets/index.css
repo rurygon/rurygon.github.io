@@ -106,16 +106,8 @@ html, body, p {
 		width: 50%;
 	}
 
-	#twitter, #twitterUN {
-		float: left;
-	}
-
-	#twitter {
-		content: url(/icons/twitter.png);
-	}
-
 	#insta, #instaUN {
-		float: right;
+		margin: 0 auto;
 	}
 
 	#insta {
