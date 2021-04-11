@@ -171,6 +171,7 @@ html, body, p {
 		width: 5vw;
 		height: auto;
 		display: inline-block;
+    margin: .1em;
 	}
 
 	#menuButton .bar {
