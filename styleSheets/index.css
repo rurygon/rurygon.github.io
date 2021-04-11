@@ -2,14 +2,17 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
 html, body, p {
 	margin: 0;
 	padding: 0;
 }
-
 /*Layout for desktops*/
 @media only screen and (min-width: 769px){
+	body {
+		background-image: url(/backgrounds/pageBG.png);
+		background-position: center;
+		background-repeat: repeat;
+	}
 
 	#mobileStage {
 		display: none;
@@ -106,14 +109,18 @@ html, body, p {
 
 	#usernameContainer p{
 		width: 50%;
-    text-align: center;
-    float: right;
+	}
+
+	#twitter, #twitterUN {
+		float: left;
+	}
+
+	#twitter {
+		content: url(/icons/twitter.png);
 	}
 
 	#insta, #instaUN {
-    width: 100%;
-		text-align: center;
-    float: right;
+		float: right;
 	}
 
 	#insta {
@@ -140,7 +147,6 @@ html, body, p {
 		font-size: .75em;
 	}
 }
-
 @media only screen and (max-width: 768px){
 	#desktopStage {
 		display: none;
