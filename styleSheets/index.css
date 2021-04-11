@@ -106,6 +106,7 @@ html, body, p {
 
 	#usernameContainer p{
 		width: 100%;
+    text-align: center;
 	}
 
 	#insta, #instaUN {
