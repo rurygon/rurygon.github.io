@@ -102,6 +102,14 @@ html, body, p {
 		font-size: 1.3vw;
 	}
 
+	#usernameContainer p{
+		width: 50%;
+	}
+
+	#insta, #instaUN {
+		float: left;
+	}
+
 	#insta {
 		content: url(/icons/insta.png);
 	}
