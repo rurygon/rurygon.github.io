@@ -100,14 +100,6 @@ html, body, p {
 		font-family: "Work Sans", sans-serif;
 		font-weight: 100;
 		font-size: 1.3vw;
-	}
-
-	#usernameContainer p{
-		width: 100%;
-	}
-
-	#insta, #instaUN {
-		width: 100%;
     margin: 0 auto;
     position: relative;
 	}
