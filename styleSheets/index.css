@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
 html, body, p {
 	margin: 0;
 	padding: 0;
@@ -9,24 +10,16 @@ html, body, p {
 
 /*Layout for desktops*/
 @media only screen and (min-width: 769px){
-	body {
-		background-image: url(/backgrounds/pageBG.png);
-		background-position: center;
-		background-repeat: repeat;
-	}
-
 
 	#mobileStage {
 		display: none;
 	}
-
 
 	#desktopStage {
 		height: 100%;
 		width: 100%;
 		position: absolute;
 	}
-
 
 	#menuBar {
 		z-index: 1;
@@ -38,7 +31,6 @@ html, body, p {
 		position: fixed;
 	}
 
-
 	#menuName {
 		width: 100%;
 		font-size: 3vw;
@@ -49,20 +41,17 @@ html, body, p {
 		white-space: nowrap;
 	}
 
-
 	#listContainer {
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 	}
 
-
 	#listContainer ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
-
 
 	/* Main menu formatting */
 	#listContainer ul li a{
@@ -73,7 +62,6 @@ html, body, p {
 		font-size: 2.7vw;
 	}
 
-
 	/* Submenu formatting */
 	#listContainer ul li ul li a {
 		text-decoration: none;
@@ -83,11 +71,9 @@ html, body, p {
 		font-size: 1.3vw;
 	}
 
-
 	.submenuLink {
 		margin: .5em 0;
 	}
-
 
 	#socialContainer {
 		height: 10%;
@@ -98,12 +84,10 @@ html, body, p {
 		bottom: 0%;
 	}
 
-
 	#iconContainer {
 		width: 100%;
 		height: 50%;
 	}
-
 
 	.icons {
 		height: auto;
@@ -111,7 +95,6 @@ html, body, p {
 		opacity: 0.3;
 		margin: 0 20%;
 	}
-
 
 	#usernameContainer {
 		width: 100%;
@@ -121,21 +104,16 @@ html, body, p {
 		font-size: 1.3vw;
 	}
 
-
 	#usernameContainer p{
 		width: 50%;
-	}
-
-	#twitter, #twitterUN {
-		float: left;
-	}
-
-	#twitter {
-		content: url(/icons/twitter.png);
+    text-align: center;
+    float: right;
 	}
 
 	#insta, #instaUN {
-		float: right;
+    width: 100%
+		text-align: center;
+    float: right;
 	}
 
 	#insta {
@@ -150,7 +128,6 @@ html, body, p {
 		border: none;
 	}
 
-
 	#name {
 		color: white;
 		font-family: "Work Sans", sans-serif;
@@ -158,7 +135,6 @@ html, body, p {
 		font-size: 3em;
 		text-align: center;
 	}
-
 
 	#name span {
 		font-size: .75em;
@@ -170,13 +146,11 @@ html, body, p {
 		display: none;
 	}
 
-
 	#mobileStage {
 		height: 100%;
 		width: 100%;
 		position: absolute;
 	}
-
 
 	.window {
 		z-index: 1;
@@ -185,7 +159,6 @@ html, body, p {
 		position: relative;
 		border: none;
 	}
-
 
 	#menuContainer {
 		z-index: 2;
@@ -200,12 +173,10 @@ html, body, p {
 		text-align: center;
 	}
 
-
 	#menuContainer a {
 		text-decoration: none;
 		color: black;
 	}
-
 
 	#menuButton {
 		z-index: 3;
@@ -215,11 +186,11 @@ html, body, p {
 		display: inline-block;
 	}
 
-
 	#menuButton .bar {
 		width: 100%;
 		height: 0.8vw;
 		background-color: #333;
 		margin: 0.8vw 0;
 	}
+
 }
