@@ -103,12 +103,12 @@ html, body, p {
 	}
 
 	#usernameContainer p{
-		width: 50%;
+		width: 100%;
 	}
 
 	#insta, #instaUN {
 		margin: 0 auto;
-    width: 100%
+    width: 100%;
 	}
 
 	#insta {
