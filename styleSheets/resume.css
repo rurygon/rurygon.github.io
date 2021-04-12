@@ -4,12 +4,7 @@ html, body {
 	overflow: hidden;
 }
 
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
-.col-12 {
+.pageFont {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
