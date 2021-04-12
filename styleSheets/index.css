@@ -151,7 +151,7 @@ html, body, p {
 	#menuContainer {
 		z-index: 2;
 		width: 100%;
-		height: auto;
+		height: 6vw;
 		position: absolute;
 		top: 0px;
 		background-color: white;
