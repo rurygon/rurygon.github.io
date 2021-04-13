@@ -26,7 +26,7 @@ html, body, p {
 		width: 20%;
 		float: left;
 		border-right: 1px solid #ccc;
-		background-color: white;
+		background-color: #3AAFA9;
 		position: fixed;
 	}
 
@@ -38,6 +38,7 @@ html, body, p {
 		margin: 1em auto;
 		text-align: center;
 		white-space: nowrap;
+    color: #17252A;
 	}
 
 	#listContainer {
@@ -57,7 +58,7 @@ html, body, p {
 		text-decoration: none;
 		font-family: "Work Sans", sans-serif;
 		font-weight: 100;
-		color: black;
+		color: #17252A;
 		font-size: 2.7vw;
 	}
 
@@ -66,7 +67,7 @@ html, body, p {
 		text-decoration: none;
 		font-family: "Work Sans", sans-serif;
 		font-weight: 100;
-		color: black;
+		color: #17252A;
 		font-size: 1.3vw;
 	}
 
@@ -115,18 +116,6 @@ html, body, p {
 		float: right;
 		position: relative;
 		border: none;
-	}
-
-	#name {
-		color: white;
-		font-family: "Work Sans", sans-serif;
-		font-weight: 100;
-		font-size: 3em;
-		text-align: center;
-	}
-
-	#name span {
-		font-size: .75em;
 	}
 }
 @media only screen and (max-width: 768px){
