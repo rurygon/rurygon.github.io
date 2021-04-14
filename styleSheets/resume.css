@@ -47,5 +47,6 @@ html, body {
 		width: 100%;
 		background-color: black;
 		position: absolute;
+		margin-top: 4vw;
 	}
 }
