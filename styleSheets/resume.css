@@ -41,12 +41,7 @@ html, body {
 	#desktopStage {
 		display: none;
 	}
-
-	#mobileStage {
-		height: 100%;
-		width: 100%;
-		background-color: black;
-		position: absolute;
-		margin-top: 8vw;
+	body {
+		margin-top: 7vw;
 	}
 }
