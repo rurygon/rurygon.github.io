@@ -1,22 +1,20 @@
 .pageFont {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
-  color: white;
 	text-align: left;
 }
 
 .headings {
-  font-weight: 200;
   font-size: 3vw;
 }
 
 .headings2 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2.3vw;
 }
 
 .paragraph {
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 2vw;
 }
 
@@ -25,16 +23,10 @@
 		margin: 2vw;
 	}
 
-	#mobileStage {
-		display: none;
-	}
+  .pageFont{
+    color: #17252A;
+  }
 
-	#desktopStage {
-		height: 100%;
-		width: 100%;
-		background-color: white;
-		position: absolute;
-	}
 }
 
 @media only screen and (max-width: 768px){
@@ -42,11 +34,12 @@
 		margin: 7vw 2vw 2vw 2vw;
 		background-color: black;
 	}
+
+  .pageFont{
+    color: white;
+  }
+
 	.container-fluid{
 		background-color: black;
-	}
-
-	#desktopStage {
-		display: none;
 	}
 }
