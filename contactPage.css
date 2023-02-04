@@ -1,90 +1,67 @@
-*{
-	font-family: 'Quicksand', sans-serif;
-}
-
-html, body, #desktopStage {
-    height: 100%;
-    width: 100%;
-}
-
-html, body, p {
+body{
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-#desktopStage {
-	position: absolute;
+* {
+	text-decoration: none;  
+	list-style-type:none;
+	color: black; 
+	font-family: 'Quicksand', sans-serif;
 }
 
-#contactForm, input[type=text], textarea, input[type=submit], input[type=reset] {
-	font-weight: 100;
+nav{
+	border-bottom: 1px solid #ccc;
+	padding: 0;
 }
 
-#contactForm {
-	position: relative;
-	display: block;
+ul{
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0;
+}
+
+li{
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	flex-grow: 1;
+}
+
+nav ul li a{
+	transition: 0.2s ease-in;
+}
+
+nav ul li a:hover{
+	color: #ccc;  
+}	 
+
+.logo {
+	font-size: 3rem;
+}
+
+.gallery img {
+	display:block;
+	width:100%;
+	margin-bottom:1.25rem;
+}
+
+.contactform {
 	width: 80%;
+	height: 80vh;
+	margin: 0 10%;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], textarea {
-	width: 100%; /* Full width */
-	border: 1px solid #ccc; /* Gray border */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	resize: none;
+@media (max-width:48rem) {
+
+	.logo{
+		font-size: 1rem;
+	}
+
 }
 
-input[type=submit], input[type=reset] {
-	border: 1px solid #ccc; /* Gray border */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-}
-
-@media only screen and (min-width: 769px){
-	#desktopStage, input[type=submit], input[type=reset] {
-		background-color: white;
-	}
 	
-	#contactForm {
-		font-size: 3vw;
-		margin: 3vw auto;
-	}
-	
-	input[type=submit], input[type=reset] {
-		font-size: 2vw;
-		padding: 1vw 2vw;
-	}
-	
-	input[type=text], textarea {
-		font-size: 2vw; 
-		font-weight: 500;
-		padding: 1vw; /* Some padding */  
-		margin-top: 1vw; /* Add a top margin */
-		margin-bottom: 2vw; /* Bottom margin */
-	}
-}
-
-@media only screen and (max-width: 768px){
-	#desktopStage, #contactForm, input[type=submit], input[type=reset] {
-		background-color: black;
-		color: white;
-	}
-	
-	#contactForm {
-		font-size: 5vw;
-		margin: 5vw auto;
-	}
-	
-	input[type=submit], input[type=reset] {
-		font-size: 3vw;
-		padding: 1vw 2vw;
-	}
-	
-	/* Style inputs with type="text", select elements and textareas */
-	input[type=text], textarea {
-		font-size: 4vw; 
-		font-weight: 500;
-		padding: 1.5vw; /* Some padding */  
-		margin-top: 2vw; /* Add a top margin */
-		margin-bottom: 4vw; /* Bottom margin */
-	}
-}
